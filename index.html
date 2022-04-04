@@ -1,0 +1,128 @@
+<!-- https://qna.habr.com/q/316582 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <title>Random post</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CYXTJN589"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8CYXTJN589');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <img src="./data/main_logo.png" height="40" alt="*">
+        <span class="fs-4">Random post</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li> -->
+        <!-- <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li> -->
+      </ul>
+    </header>
+  </div>
+  <!-- поле -->
+  <div class="container">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <!--  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <span class="item_title"><img src="./data/vc_logo.png" height="30" alt="*">
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <div class="d-grid gap-2">
+              <button id="btn_vc" class="btn btn-outline-secondary btn-sm" type="button">Обновить</button>
+            </div>
+            <!-- content vc-->
+            <div id="content_vc" class="item_body">
+
+              <div class="header_content">
+                <img src="{subsite_avatar_url}" width="20" alt="">
+                <span class='subsite fw-bold'>{subsite_name}</span>
+                <span class='author'>{author}</span>
+                <span class='date'>{date}</span>
+              </div>
+              <div class='title fw-bold fs-5 '>{title}</div>
+              <div class="post_body">
+                <span class='fw-light lh-base fs-6'><a href="{direct_url}" target="_blank">{post_body}</a></span>
+              </div>
+              <div class="footer_content">
+                <img src="./data/comment.png" width="20" alt="*">
+                <span class='comment'>{comments}</span>
+                <img src="./data/love.png" width="18" alt="*">
+                <span class='like'>{likes}</span>
+                <img src="./data/view.png" width="20" alt="*">
+                <span class='view'>{views}</span>
+              </div>
+
+            </div>
+            <!-- content vc-->
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <span class="item_title"><img src="./data/dtf_logo.png" height="18" alt="*">
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <div class="d-grid gap-2">
+              <button class="btn btn-outline-secondary btn-sm" type="button">Обновить</button>
+            </div>
+            контент
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <span class="item_title"><img src="./data/tj_logo.jpg" height="30" alt="*">
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <div class="d-grid gap-2">
+              <button class="btn btn-outline-secondary btn-sm" type="button">Обновить</button>
+            </div>
+            контент
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

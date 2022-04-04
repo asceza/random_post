@@ -1,0 +1,42 @@
+.accordion-button{
+  padding:10px;
+}
+
+
+.item_body {
+  padding: 5px;
+  /* background-color: #eaecee; */
+}
+
+.btn-outline-secondary {
+  margin-bottom: 10px;
+}
+
+.subsite, .author, .comment, .like, .view{
+  margin-right: 40px;
+}
+
+.title, .post_body {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color:  #17202a;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2c3e50 ;
+}
+
+
+#content_vc {
+  background-color: #f4f6f6;
+  border-radius: 10px
+}
+
+.fs-4{
+  margin-left: 10px
+}
