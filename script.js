@@ -38,7 +38,7 @@ const buttonVC = document.getElementById('btn_vc');
 // Добавим обработчик для события "click", предоставив callback.
 // Теперь по клику на элемент будет всплывать подсказка.
 buttonVC.addEventListener('click', function(event) {
-  fetch('http://127.0.0.1:5000/vc')
+  fetch('https://wezochy-random-post.herokuapp.com/vc')
     .then(data => {
       return data.text();
     })
@@ -52,7 +52,7 @@ buttonVC.addEventListener('click', function(event) {
 // DTF
 const buttonDTF = document.getElementById('btn_dtf');
 buttonDTF.addEventListener('click', function(event) {
-  fetch('http://127.0.0.1:5000/dtf')
+  fetch('https://wezochy-random-post.herokuapp.com/dtf')
     .then(data => {
       return data.text();
     })
@@ -66,7 +66,7 @@ buttonDTF.addEventListener('click', function(event) {
 // tjournal
 const buttontjournal = document.getElementById('btn_tjournal');
 buttontjournal.addEventListener('click', function(event) {
-  fetch('http://127.0.0.1:5000/tjournal')
+  fetch('https://wezochy-random-post.herokuapp.com/tjournal')
     .then(data => {
       return data.text();
     })
