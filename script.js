@@ -1,7 +1,7 @@
 // https://learn.javascript.ru/fetch
 
 function funonload() {
-  fetch('http://127.0.0.1:5000/vc')
+  fetch('https://wezochy-random-post.herokuapp.com/vc')
     .then(data => {
       return data.text();
     })
@@ -10,7 +10,7 @@ function funonload() {
       contentVC.innerHTML = data;
     });
 
-  fetch('http://127.0.0.1:5000/dtf')
+  fetch('https://wezochy-random-post.herokuapp.com/dtf')
     .then(data => {
       return data.text();
     })
@@ -19,7 +19,7 @@ function funonload() {
       contentDTF.innerHTML = data;
     });
 
-  fetch('http://127.0.0.1:5000/tjournal')
+  fetch('https://wezochy-random-post.herokuapp.com/tjournal')
     .then(data => {
       return data.text();
     })
