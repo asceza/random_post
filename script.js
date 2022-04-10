@@ -1,4 +1,6 @@
-// https://learn.javascript.ru/fetch
+// Вы зашли сюда скорее всего чтобы изучить мой JS код.
+// Но вся логика написана на беке.
+// Лучше пишите мне в телегу https://t.me/wezochy
 
 function funonload() {
   fetch('https://wezochy-random-post.herokuapp.com/vc')
